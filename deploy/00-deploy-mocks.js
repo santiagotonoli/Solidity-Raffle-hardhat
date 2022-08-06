@@ -22,3 +22,4 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
             
     }
 }
+module.exports.tags = ["all", "raffle"]

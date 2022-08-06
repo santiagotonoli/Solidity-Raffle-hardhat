@@ -13,7 +13,6 @@ const { developmentChains, networkConfig } = require("../../helper-hardhat-confi
               await deployments.fixture(["all"]) // Deploys modules with the tags "all"
               vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock") // Returns a new connection to the VRFCoordinatorV2Mock contract
               raffle = await ethers.getContract("Raffle", deployer) // Returns a new connection to the Raffle contract
-              vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock") // Returns a new connection to the VRFCoordinatorV2Mock contract
           })
 
           describe("constructor", function () {
